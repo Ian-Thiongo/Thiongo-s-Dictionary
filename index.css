@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    
+}
+
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-image: url(./img/pexels-李依靜-19570531.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+
+.search{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+    background: burlywood;
+    backdrop-filter: blur(4px) saturate(180%);
+}
+
+.input{
+    background: transparent;
+    flex: 1;
+    border: 0;
+    outline: none;
+    padding: 24-x 20px;
+    font-size: 20px;
+    color: #cac7ff'
+}
+
+::placeholder{
+    color: darkslategray;
+}
+
+.search button img{ 
+    width: 25px;
+}
+.search button{
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: #58629b;
+    cursor: pointer;
+}
