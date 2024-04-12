@@ -1,22 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="Dictionary Icon" type="icon" href="./img/dictionary (1).png" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="Icon" href="./img/dictionary (1).png" />
+    <link rel="stylesheet" href="index.css" />
     <title>Thiongo's Dictionary</title>
-    <link rel="stylesheet" href="./index.css" />
-  
   </head>
   <body>
-    <div class="container">
-      <form class="search">
-        
-        <input type="search" placeholder="Search Anything" class="input" />
-        <button class="btn" type="submit"><img src="./img/search_FILL0_wght400_GRAD0_opsz24.png" alt=""></button>
-      </form>
+    <!-- Navbar -->
+    <div class="navbar">
+      <!-- Title -->
+      <div class="navbar-title">Thiongo's Dictionary</div>
+
+      <!-- Links -->
+      <div class="navbar-links">
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
 
-    <script src="./index.js"></script>
+    <div class="container">
+      <div class="search-box">
+        <input type="text" placeholder="Type the word here.." id="inp-word" />
+        <button id="search-btn">Search</button>
+      </div>
+      <div class="result" id="result"></div>
+    </div>
+    <hr class="line" />
+    <div id="about">
+      <h1 class="#about">About</h1>
+      <p>
+        I'm Ian Thiong'o, the creator behind this project. At 21 years old, I
+        built this dictionary with a simple goal in mind: to help people easily
+        discover the meanings of words. Whether you're a student, professional,
+        or language enthusiast, I hope this tool serves as a valuable resource
+        in your quest for knowledge. Happy exploring!
+      </p>
+    </div>
+    <div class="footer">
+      <footer>
+        <a href="#contact">Contact Information: Thiongoian6148@gmail.com</a>
+      </footer>
+    </div>
+    <!-- Script -->
+    <script src="index.js"></script>
   </body>
 </html>

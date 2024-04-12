@@ -1,56 +1,156 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:not(i) {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #dadbe0;
+}
+
+.container {
+  background-color: #252510;
+  width: 90vmin;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 80px 50px;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
+}
+
+.search-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-box input {
+  padding: 5px;
+  width: 70%;
+  border: none;
+  outline: none;
+  border-bottom: 3px solid #0c0c0c;
+  font-size: 16px;
+}
+
+.search-box button {
+  padding: 15px 0;
+  width: 25%;
+  background-color: #8e9597;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.result {
+  position: relative;
+}
+
+.result h3 {
+  font-size: 30px;
+  color: #eaeaee;
+}
+
+.result .word {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.result button {
+  background-color: transparent;
+  color: #dcdbe4;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.result .details {
+  display: flex;
+  gap: 10px;
+  color: #f7f7fc;
+  margin: 5px 0 20px 0;
+  font-size: 14px;
+}
+
+.word-meaning {
+  color: #ebebf3;
+}
+
+.word-example {
+  color: #dadbe0;
+  font-style: italic;
+  border-left: 5px solid #ae9cff;
+  padding-left: 20px;
+  margin-top: 30px;
+}
+
+.navbar {
+  background-color: #423f3f;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-title {
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.navbar-links a:hover {
+  background-color: #f8eeee;
 }
 
 
-.container{
-    width: 100%;
-    min-height: 100vh;
-    padding: 5%;
-    background-image: url(./img/pexels-李依靜-19570531.jpg);
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}  
+#about{
+  padding-top: 40%;
+  color: rgb(87, 84, 81);
+  width: 1000px;
+  padding-left: 400px;
+  border-bottom: 3px solid #0c0c0c;
+}
+#about h1{
+  color: rgb(72, 219, 230);
+}
+.line {
+color: #0c0c0c solid;}
 
-.search{
-    width: 100%;
-    max-width: 700px;
-    display: flex;
-    align-items: center;
-    border-radius: 60px;
-    padding: 10px 20px;
-    background: burlywood;
-    backdrop-filter: blur(4px) saturate(180%);
+.footer{
+  background-color: #cccbcb;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #dcdbe4;
+  padding-left: 400px;
 }
 
-.input{
-    background: transparent;
-    flex: 1;
-    border: 0;
-    outline: none;
-    padding: 24-x 20px;
-    font-size: 20px;
-    color: #cac7ff'
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px 10px;
 }
 
-::placeholder{
-    color: darkslategray;
-}
-
-.search button img{ 
-    width: 25px;
-}
-.search button{
-    border: 0;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    background: #58629b;
-    cursor: pointer;
+.footer-links a:hover {
+  background-color: #f8eeee;
 }
